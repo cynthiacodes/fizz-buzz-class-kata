@@ -41,7 +41,7 @@ export class BizzFuzzer {
         this.value = 0;
     }
 
-    next() {
+    next(): string | number {
         this.value++;
         if (
             this.value % this.firstNum === 0 &&
@@ -61,14 +61,3 @@ export class BizzFuzzer {
         this.value = 0;
     }
 }
-
-const myBizzFuzzer = new BizzFuzzer("Boop", "Schnoop", 2, 3);
-console.log(myBizzFuzzer.next()); //1
-console.log(myBizzFuzzer.next()); //"Boop"
-console.log(myBizzFuzzer.next()); //"Schnoop"
-console.log(myBizzFuzzer.next()); //"Boop"
-console.log(myBizzFuzzer.next()); //5
-console.log(myBizzFuzzer.next()); //"BoopSchnoop"
-
-myBizzFuzzer.reset();
-console.log(myBizzFuzzer.next()); //1...
