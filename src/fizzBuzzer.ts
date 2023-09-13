@@ -17,14 +17,3 @@ export class FizzBuzzer {
         this.value = 0;
     }
 }
-const myFizzBuzzer = new FizzBuzzer();
-console.log(myFizzBuzzer.next()); //1
-console.log(myFizzBuzzer.next()); //2
-console.log(myFizzBuzzer.next()); //"Fizz"
-console.log(myFizzBuzzer.next()); //4
-console.log(myFizzBuzzer.next()); //5
-console.log(myFizzBuzzer.next()); //"Fizz"
-console.log(myFizzBuzzer.next()); //7
-
-myFizzBuzzer.reset();
-console.log(myFizzBuzzer.next()); //1...
